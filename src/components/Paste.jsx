@@ -1,12 +1,12 @@
-// import {
-//   faCopy,
-//   faEye,
-//   faPenToSquare,
-//   faShareNodes,
-//   faTrash,
-// } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { format } from "date-fns";
+import {
+  faCopy,
+  faEye,
+  faPenToSquare,
+  faShareNodes,
+  faTrash,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { format } from "date-fns";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
@@ -49,22 +49,19 @@ const Paste = () => {
                   <button className="bg-green-600 hover:bg-green-700">
                     {" "}
                     <Link to={`/?pasteId=${paste?._id}`} className="text-white">
-                      {/* <FontAwesomeIcon icon={faPenToSquare} />  */}
-                      Edit
+                      <FontAwesomeIcon icon={faPenToSquare} /> Edit
                     </Link>
                   </button>
                   <button className="bg-blue-600 hover:bg-blue-700">
                     <Link to={`/pastes/${paste?._id}`} className="text-white">
-                      {/* <FontAwesomeIcon icon={faEye} />  */}
-                      View
+                      <FontAwesomeIcon icon={faEye} /> View
                     </Link>
                   </button>
                   <button
                     onClick={() => handleDelete(paste?._id)}
                     className="bg-red-600 hover:bg-red-700"
                   >
-                    {/* <FontAwesomeIcon icon={faTrash} />  */}
-                    Delete
+                    <FontAwesomeIcon icon={faTrash} /> Delete
                   </button>
                   <button
                     className="bg-gray-600 hover:bg-gray-700"
@@ -73,8 +70,7 @@ const Paste = () => {
                       toast.success("Copied to clipboard");
                     }}
                   >
-                    {/* <FontAwesomeIcon icon={faCopy} />  */}
-                    Copy
+                    <FontAwesomeIcon icon={faCopy} /> Copy
                   </button>
                   <button
                     className="bg-teal-600 hover:bg-teal-700"
@@ -95,13 +91,11 @@ const Paste = () => {
                       }
                     }}
                   >
-                    {/* <FontAwesomeIcon icon={faShareNodes} />  */}
-                    Share
+                    <FontAwesomeIcon icon={faShareNodes} /> Share
                   </button>
                 </div>
                 <div className="text-sm text-gray-400 p-2 text-right">
-                  {/* {format(new Date(paste.createdAt), "MMMM dd, yyyy HH:mm")} */}
-                  {paste.createdAt}
+                  {format(new Date(paste.createdAt), "MMMM dd, yyyy HH:mm")}
                 </div>
               </div>
             );
