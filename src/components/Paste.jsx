@@ -6,7 +6,7 @@
 //   faTrash,
 // } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { format } from "date-fns";
+// import { format } from "date-fns";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
@@ -100,7 +100,8 @@ const Paste = () => {
                   </button>
                 </div>
                 <div className="text-sm text-gray-400 p-2 text-right">
-                  {format(new Date(paste.createdAt), "MMMM dd, yyyy HH:mm")}
+                  {/* {format(new Date(paste.createdAt), "MMMM dd, yyyy HH:mm")} */}
+                  {paste.createdAt}
                 </div>
               </div>
             );
