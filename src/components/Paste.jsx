@@ -30,7 +30,7 @@ const Paste = () => {
     <div className="max-w-[1000px]">
       <div>
         <input
-          className="p-2 pl-4 rounded-2xl min-w-[600px] my-5"
+          className="p-2 pl-4 rounded-2xl my-5"
           type="search"
           placeholder="Search..."
           value={searchTerm}
